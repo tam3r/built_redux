@@ -2,7 +2,7 @@
 
 We are going to get started with a quick introduction to built_value.dart because built_redux is tightly coupled with built_value.dart.
 
-If you have used dart much you probably know value types are not built into the language. However, value types are incredibly powerful for many reasons, and are very applicable to the redux pattern because when using redux you are storing all of your application’s state in a single immutable object. That object would ideally be an value type and not a class because it is simply data. It shouldn’t have instance methods, or private state. It should just be data.
+If you have used dart much you probably know value types are not built into the language. However, value types are incredibly powerful for many reasons, and are very applicable to the redux pattern because when using redux you are storing all of your application’s state in a single immutable object. That object would ideally be a value type and not a class because it is simply data. It shouldn’t have instance methods, or private state. It should just be data.
 
 That state object should also be immutable because you only want your store’s state to be updated by dispatching actions. If the state was mutable, and was mutated by means other than an action, the store would not know to dispatch an event notifying it’s subscribers of the change.
 
